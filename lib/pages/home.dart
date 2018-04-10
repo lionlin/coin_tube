@@ -96,8 +96,51 @@ class _HomePageState extends State<HomePage> {
           ],
         ),
       ),
-      body: new Center(  //中央内容部分body
-        child: new Text('COIN TUBE',style: new TextStyle(fontSize: 35.0),),
+      body: new Container(
+        child: new Column(
+          children: <Widget>[
+            new Center(
+              child: new Card(
+                child: new Column(
+                  children: <Widget>[
+                    new CircleAvatar(    //圆形图标控件
+                      //图片调取自网络
+                      backgroundImage: new AssetImage('images/lake.jpg'),
+                    ),
+                    new Text('Hello John Doe',style: new TextStyle(fontSize: 35.0),),
+                    new Text('last login: 10:33am 2018-04-10',style: new TextStyle(fontSize: 15.0),),
+                  ],
+                ),
+              ),
+            ),
+            new Center(
+              child: new Card(
+                color: Colors.blue,
+                child: new Column(
+                  children: <Widget>[
+                    new Text('Trading Balance',style: new TextStyle(fontSize: 18.0,color: Colors.white),),
+                    new Text('\$6328.33 AUD',style: new TextStyle(fontSize: 25.0,color: Colors.white),),
+                    new Text('\$590.22',style: new TextStyle(fontSize: 25.0,color: Colors.white),),
+                  ],
+                ),
+              ),
+            ),
+            new Center(
+              child: new Card(
+                child: new Column(
+                  children: <Widget>[
+                    new CircleAvatar(    //圆形图标控件
+                      //图片调取自网络
+                      backgroundImage: new AssetImage('images/lake.jpg'),
+                    ),
+                    new Text('Hello John Doe',style: new TextStyle(fontSize: 35.0),),
+                    new Text('last login: 10:33am 2018-04-10',style: new TextStyle(fontSize: 15.0),),
+                  ],
+                ),
+              ),
+            ),
+          ],
+        )
       ),
     );
   }

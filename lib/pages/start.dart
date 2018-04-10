@@ -12,22 +12,27 @@ class Start extends StatelessWidget {
           image: new ExactAssetImage('images/background.png'),
         ),),
       child: new Container(
-        margin: new EdgeInsets.fromLTRB(0.0, 300.0, 0.0, 200.0),
+        margin: new EdgeInsets.fromLTRB(0.0, 300.0, 0.0, 160.0),
         child: new Column(
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: <Widget>[
-              new RaisedButton(
-                onPressed: () {
-//                  print('点击红色按钮事件');
-                },
-                color: Colors.blue[400],
-                child: new Text('sign in with your account',style: new TextStyle(color: Colors.white)),
-              ),
-              new Flexible(
-                flex: 1,
+              new Container(
+                width: 280.0,
+                height: 50.0,
                 child: new RaisedButton(
                   onPressed: () {
-//                    print('点击黄色按钮事件');
+//                  print('点击红色按钮事件');
+                  },
+                  color: Colors.white,
+                  child: new Text('sign in with your account',style: new TextStyle(color: Colors.blue)),
+                ),
+              ),
+              new Container(
+                width: 280.0,
+                height: 50.0,
+                child: new RaisedButton(
+                  onPressed: () {
+//                  print('点击红色按钮事件');
                   },
                   color: Colors.blue[400],
                   child: new Text('open an account',style: new TextStyle(color: Colors.white)),
