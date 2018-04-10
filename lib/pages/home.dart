@@ -144,7 +144,7 @@ class _HomePageState extends State<HomePage> {
               child: new Card(
                 child: new Container(
                   width: 280.0,
-                  margin: const EdgeInsets.all(10.0),
+                  margin: const EdgeInsets.all(20.0),
                   child: new Column(
                     children: <Widget>[
                       new Text('Cryptocurrency Watchlist',style: new TextStyle(fontSize: 18.0),),
