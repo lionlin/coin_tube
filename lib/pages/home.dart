@@ -120,7 +120,7 @@ class _HomePageState extends State<HomePage> {
                   children: <Widget>[
                     new Text('Trading Balance',style: new TextStyle(fontSize: 18.0,color: Colors.white),),
                     new Text('\$6328.33 AUD',style: new TextStyle(fontSize: 25.0,color: Colors.white),),
-                    new Text('\$590.22',style: new TextStyle(fontSize: 25.0,color: Colors.white),),
+                    new Text('\$590.22',style: new TextStyle(fontSize: 25.0,color: Colors.green),),
                   ],
                 ),
               ),
@@ -129,12 +129,49 @@ class _HomePageState extends State<HomePage> {
               child: new Card(
                 child: new Column(
                   children: <Widget>[
-                    new CircleAvatar(    //圆形图标控件
-                      //图片调取自网络
-                      backgroundImage: new AssetImage('images/lake.jpg'),
+                    new Text('Cryptocurrency Watchlist',style: new TextStyle(fontSize: 18.0),),
+                    new Container(
+                      margin: const EdgeInsets.fromLTRB(10.0, 10.0, 10.0, 10.0),
+                      child: new Row(
+                        children: <Widget>[
+                          new CircleAvatar(    //圆形图标控件
+                            //图片调取自网络
+                            backgroundImage: new AssetImage('images/lake.jpg'),
+                          ),
+                          new Text('29 sept.17',style: new TextStyle(fontSize: 18.0),),
+                          new Text('BITCOIN',style: new TextStyle(fontSize: 18.0),),
+                          new Text('0.1800BTC',style: new TextStyle(fontSize: 18.0),),
+                        ],
+                      ),
                     ),
-                    new Text('Hello John Doe',style: new TextStyle(fontSize: 35.0),),
-                    new Text('last login: 10:33am 2018-04-10',style: new TextStyle(fontSize: 15.0),),
+                    new Container(
+                      margin: const EdgeInsets.fromLTRB(10.0, 10.0, 10.0, 10.0),
+                      child: new Row(
+                        children: <Widget>[
+                          new CircleAvatar(    //圆形图标控件
+                            //图片调取自网络
+                            backgroundImage: new AssetImage('images/lake.jpg'),
+                          ),
+                          new Text('29 sept.17',style: new TextStyle(fontSize: 18.0),),
+                          new Text('BITCOIN',style: new TextStyle(fontSize: 18.0),),
+                          new Text('0.1800BTC',style: new TextStyle(fontSize: 18.0),),
+                        ],
+                      ),
+                    ),
+                    new Container(
+                      margin: const EdgeInsets.fromLTRB(10.0, 10.0, 10.0, 10.0),
+                      child: new Row(
+                        children: <Widget>[
+                          new CircleAvatar(    //圆形图标控件
+                            //图片调取自网络
+                            backgroundImage: new AssetImage('images/lake.jpg'),
+                          ),
+                          new Text('29 sept.17',style: new TextStyle(fontSize: 18.0),),
+                          new Text('BITCOIN',style: new TextStyle(fontSize: 18.0),),
+                          new Text('0.1800BTC',style: new TextStyle(fontSize: 18.0),),
+                        ],
+                      ),
+                    ),
                   ],
                 ),
               ),
