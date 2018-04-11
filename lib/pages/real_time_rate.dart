@@ -1,19 +1,18 @@
 import 'package:flutter/material.dart';
 import './start.dart';
-import './real_time_rate.dart';
 
-class HomePage extends StatefulWidget {
+class RealTimeRates extends StatefulWidget {
   @override
-  _HomePageState createState() => new _HomePageState();
+  _RealTimeRates createState() => new _RealTimeRates();
 }
 
-class _HomePageState extends State<HomePage> {
+class _RealTimeRates extends State<RealTimeRates> {
 
   var textStyle = new TextStyle(fontSize: 14.0,color: Colors.white);
   @override
   Widget build(BuildContext context) {
     return new Scaffold(
-      appBar: new AppBar(title: new Text("DASHBOARD"), backgroundColor: Colors.blueAccent,),  //头部的标题AppBar
+      appBar: new AppBar(title: new Text("Real Time Rates"), backgroundColor: Colors.blueAccent,),  //头部的标题AppBar
       //侧边栏填充内容
       drawer: new Drawer(
         child: new ListView(
@@ -56,7 +55,7 @@ class _HomePageState extends State<HomePage> {
               leading: new CircleAvatar(    //圆形图标控件
                 //图片调取自网络
                 backgroundImage: new NetworkImage('https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1523206070855&di=4b7343fd05c931ff949877387b7f5243&imgtype=0&src=http%3A%2F%2Fscimg.jb51.net%2Fallimg%2F170803%2F106-1FP310030TS.jpg'),
-              ), //左侧首字母图标显示，不显示则传null
+              ),//左侧首字母图标显示，不显示则传null
             ),
             new Divider(),  //分割线控件
             new ListTile(    //第二个功能项
@@ -65,11 +64,7 @@ class _HomePageState extends State<HomePage> {
               leading: new CircleAvatar(    //圆形图标控件
                 //图片调取自网络
                 backgroundImage: new NetworkImage('https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1523206070855&di=4b7343fd05c931ff949877387b7f5243&imgtype=0&src=http%3A%2F%2Fscimg.jb51.net%2Fallimg%2F170803%2F106-1FP310030TS.jpg'),
-              ),
-                onTap: () {
-                  Navigator.of(context).pop();  //点击后收起侧边栏
-                  Navigator.of(context).push(new MaterialPageRoute(builder: (BuildContext context) => new RealTimeRates()));  //进入OtherPage页面，传入参数First Page
-                }//左侧首字母图标显示，不显示则传null
+              ),//左侧首字母图标显示，不显示则传null
             ),
             new Divider(),  //分割线控件
             new ListTile(    //第二个功能项
@@ -112,24 +107,6 @@ class _HomePageState extends State<HomePage> {
             ),),
         child: new Column(
           children: <Widget>[
-              new Center(
-                child: new Card(
-                  child: new Container(
-                    width: 280.0,
-                    margin: const EdgeInsets.all(20.0),
-                    child: new Column(
-                      children: <Widget>[
-                        new CircleAvatar(    //圆形图标控件
-                          //图片调取自网络
-                          backgroundImage: new AssetImage('images/lake.jpg'),
-                        ),
-                        new Text('Hello John Doe',style: new TextStyle(fontSize: 35.0),),
-                        new Text('last login: 10:33am 2018-04-10',style: new TextStyle(fontSize: 15.0),),
-                      ],
-                    ),
-                  ),
-                ),
-              ),
             new Center(
               child: new Card(
                 color: Colors.blue,
@@ -159,6 +136,7 @@ class _HomePageState extends State<HomePage> {
                         padding: const EdgeInsets.fromLTRB(10.0,5.0,10.0,5.0),
                         margin: const EdgeInsets.fromLTRB(10.0, 10.0, 10.0, 10.0),
                         child: new Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                           children: <Widget>[
                             new CircleAvatar(    //圆形图标控件
                               //图片调取自网络
@@ -175,6 +153,7 @@ class _HomePageState extends State<HomePage> {
                         padding: const EdgeInsets.fromLTRB(10.0,5.0,10.0,5.0),
                         margin: const EdgeInsets.fromLTRB(10.0, 10.0, 10.0, 10.0),
                         child: new Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                           children: <Widget>[
                             new CircleAvatar(    //圆形图标控件
                               //图片调取自网络
@@ -191,6 +170,41 @@ class _HomePageState extends State<HomePage> {
                         padding: const EdgeInsets.fromLTRB(10.0,5.0,10.0,5.0),
                         margin: const EdgeInsets.fromLTRB(10.0, 10.0, 10.0, 10.0),
                         child: new Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                          children: <Widget>[
+                            new CircleAvatar(    //圆形图标控件
+                              //图片调取自网络
+                              backgroundImage: new AssetImage('images/lake.jpg'),
+                            ),
+                            new Text('29 sept.17',style: textStyle,),
+                            new Text('BITCOIN',style: textStyle,),
+                            new Text('0.1800BTC',style: textStyle,),
+                          ],
+                        ),
+                      ),
+                      new Container(
+                        color: Colors.green,
+                        padding: const EdgeInsets.fromLTRB(10.0,5.0,10.0,5.0),
+                        margin: const EdgeInsets.fromLTRB(10.0, 10.0, 10.0, 10.0),
+                        child: new Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                          children: <Widget>[
+                            new CircleAvatar(    //圆形图标控件
+                              //图片调取自网络
+                              backgroundImage: new AssetImage('images/lake.jpg'),
+                            ),
+                            new Text('29 sept.17',style: textStyle,),
+                            new Text('BITCOIN',style: textStyle,),
+                            new Text('0.1800BTC',style: textStyle,),
+                          ],
+                        ),
+                      ),
+                      new Container(
+                        color: Colors.green,
+                        padding: const EdgeInsets.fromLTRB(10.0,5.0,10.0,5.0),
+                        margin: const EdgeInsets.fromLTRB(10.0, 10.0, 10.0, 10.0),
+                        child: new Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                           children: <Widget>[
                             new CircleAvatar(    //圆形图标控件
                               //图片调取自网络
