@@ -8,6 +8,7 @@ class HomePage extends StatefulWidget {
 
 class _HomePageState extends State<HomePage> {
 
+  var textStyle = new TextStyle(fontSize: 14.0,color: Colors.white);
   @override
   Widget build(BuildContext context) {
     return new Scaffold(
@@ -158,9 +159,9 @@ class _HomePageState extends State<HomePage> {
                               //图片调取自网络
                               backgroundImage: new AssetImage('images/lake.jpg'),
                             ),
-                            new Text('29 sept.17',style: new TextStyle(fontSize: 14.0),),
-                            new Text('BITCOIN',style: new TextStyle(fontSize: 14.0),),
-                            new Text('0.1800BTC',style: new TextStyle(fontSize: 14.0),),
+                            new Text('29 sept.17',style: textStyle,),
+                            new Text('BITCOIN',style: textStyle,),
+                            new Text('0.1800BTC',style: textStyle,),
                           ],
                         ),
                       ),
@@ -174,9 +175,9 @@ class _HomePageState extends State<HomePage> {
                               //图片调取自网络
                               backgroundImage: new AssetImage('images/lake.jpg'),
                             ),
-                            new Text('29 sept.17',style: new TextStyle(fontSize: 14.0),),
-                            new Text('BITCOIN',style: new TextStyle(fontSize: 14.0),),
-                            new Text('0.1800BTC',style: new TextStyle(fontSize: 14.0),),
+                            new Text('29 sept.17',style: textStyle,),
+                            new Text('BITCOIN',style: textStyle,),
+                            new Text('0.1800BTC',style: textStyle,),
                           ],
                         ),
                       ),
@@ -190,9 +191,9 @@ class _HomePageState extends State<HomePage> {
                               //图片调取自网络
                               backgroundImage: new AssetImage('images/lake.jpg'),
                             ),
-                            new Text('29 sept.17',style: new TextStyle(fontSize: 14.0),),
-                            new Text('BITCOIN',style: new TextStyle(fontSize: 14.0),),
-                            new Text('0.1800BTC',style: new TextStyle(fontSize: 14.0),),
+                            new Text('29 sept.17',style: textStyle,),
+                            new Text('BITCOIN',style: textStyle,),
+                            new Text('0.1800BTC',style: textStyle,),
                           ],
                         ),
                       ),
