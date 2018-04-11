@@ -149,6 +149,8 @@ class _HomePageState extends State<HomePage> {
                     children: <Widget>[
                       new Text('Cryptocurrency Watchlist',style: new TextStyle(fontSize: 18.0),),
                       new Container(
+                        color: Colors.green,
+                        padding: const EdgeInsets.fromLTRB(10.0,5.0,10.0,5.0),
                         margin: const EdgeInsets.fromLTRB(10.0, 10.0, 10.0, 10.0),
                         child: new Row(
                           children: <Widget>[
@@ -163,6 +165,8 @@ class _HomePageState extends State<HomePage> {
                         ),
                       ),
                       new Container(
+                        color: Colors.redAccent,
+                        padding: const EdgeInsets.fromLTRB(10.0,5.0,10.0,5.0),
                         margin: const EdgeInsets.fromLTRB(10.0, 10.0, 10.0, 10.0),
                         child: new Row(
                           children: <Widget>[
@@ -177,6 +181,8 @@ class _HomePageState extends State<HomePage> {
                         ),
                       ),
                       new Container(
+                        color: Colors.green,
+                        padding: const EdgeInsets.fromLTRB(10.0,5.0,10.0,5.0),
                         margin: const EdgeInsets.fromLTRB(10.0, 10.0, 10.0, 10.0),
                         child: new Row(
                           children: <Widget>[
